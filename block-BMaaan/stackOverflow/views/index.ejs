@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form method="POST" action="/users/">
+      <input name="users" type="text" placeholder="users" />
+      <input name="questions" type="text" placeholder="questions" />
+      <input name="answers" type="text" placeholder="answers" />
+      <input name="replies" type="text" placeholder="replies" />
+      <input
+        name="questionsUpvote"
+        type="number"
+        placeholder="questionsUpvote"
+      />
+      <input
+        name="questionsDownvote"
+        type="number"
+        placeholder="questionsDownvote"
+      />
+      <input name="answersUpvote" type="number" placeholder="answersUpvote" />
+      <input
+        name="answersDownvote"
+        type="number"
+        placeholder="answersDownvote"
+      />
+      <input name="repliesUpvote" type="number" placeholder="repliesUpvote" />
+      <input
+        name="repliesDownvote"
+        type="number"
+        placeholder="repliesDownvote"
+      />
+      <input name="tagsQuestion" type="text" placeholder="tagsQuestion" />
+      <input name="viewsQuestion" type="number" placeholder="viewsQuestion" />
+      <input name="reputation" type="number" placeholder="reputation" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
